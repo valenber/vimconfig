@@ -1,6 +1,6 @@
 # Nvim configuration
 
-## Install nvim from source
+## Install neovim from source
 
 * Clone repository
 * Checkout realease branch e.g. `git checkout -t origin/release-0.6`
@@ -11,9 +11,11 @@ sudo make install
 ```
 
 ## Configuration
-Entry configuration file `init.lua` should be located inside `/$HOME/.config/nvim/`
+Entry configuration file `init.lua` of `vim.init` should be located inside `/$HOME/.config/nvim/`
 
-Add packer plugin manager to your system
+Add plugin manager to your system
+
+E.g. packer
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
