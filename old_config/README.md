@@ -24,19 +24,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ## Configuration components
 
-* [ ] Keymapping
-
-* [ ] Plugin manager
-
-* [ ] LSP
-	* [ ] Code completion
-	* [ ] Code actions
-	* [ ] Autoformat
-* [ ] Status line
-* [ ] Color scheme
-* [ ] Buffers tabs
-
-* [ ] File navigation
-
-* [ ] Custom snippets
+* [x] Plugin manager
+* [x] Color scheme
+* [x] Code completion
+* [x] Code actions
+* [x] Autoformat
+* [x] Status line
+* [x] File navigation
+* [x] Buffers tabs
+* [x] Custom snippets
 * [ ] Debugger (run individual tests)
