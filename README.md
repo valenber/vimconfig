@@ -24,7 +24,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ## Configuration components
 
-* [ ] Keymapping
+* [x] Keymapping
 
 * [ ] Plugin manager
 
@@ -38,5 +38,5 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 * [ ] File navigation
 
-* [ ] Custom snippets
+* [ ] Custom snippets (input helpers)
 * [ ] Debugger (run individual tests)

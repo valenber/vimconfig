@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------
 local options = {
   number = true,
-  relativenumber = truer,
+  relativenumber = true,
   backup = true,
   backupdir = "../../.local/share/nvim/backup//",
   clipboard = "unnamedplus",
@@ -45,3 +45,44 @@ for k, v in pairs(options) do
 end
 
 vim.cmd [[set iskeyword+=-]]
+
+--------------------------------------------------------------------------
+-- Keymaps
+--------------------------------------------------------------------------
+local opts = { noremap = true, silent = true }
+local cmd_opts = { noremap = true }
+local keymap = vim.api.nvim_set_keymap
+
+vim.g.mapleader =','
+
+-- Normal Mode --
+keymap("n", "<leader>vr", ":source ~/.config/nvim/init.lua<cr>", opts)
+keymap("n", "<leader>ve", ":edit ~/.config/nvim/init.lua<cr>", opts)
+
+keymap("i", "jk", "<Esc>", opts)
+
+-- start in-file search on Spacebar
+keymap("n", "<Space>", "/", cmd_opts)
+
+-- clear search highlighting
+keymap("n", "<Esc>", ":noh<cr>", cmd_opts)
+
+-- allow gf to open non-existent files
+keymap("n", "<leader>gf", ":edit <cfile><cr>", opts)
+
+-- splits navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+
+-- buffers navigation
+keymap("n", "<C-s>", ":bnext<CR>", opts)
+keymap("n", "<C-a>", ":bprevious<CR>", opts)
+
+-- Visual Mode --
+keymap("v", "jk", "<Esc>", opts)
+
+-- Stay in indent mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
