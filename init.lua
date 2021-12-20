@@ -86,3 +86,12 @@ keymap("v", "jk", "<Esc>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+--------------------------------------------------------------------------
+-- Imports
+--------------------------------------------------------------------------
+require("user.plugins")
+
+-- plugin configurations
+require("user.onedark")
+require("user.lualine")

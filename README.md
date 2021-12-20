@@ -32,8 +32,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 	* [ ] Code completion
 	* [ ] Code actions
 	* [ ] Autoformat
-* [ ] Status line
-* [ ] Color scheme
+* [x] Status line
+* [x] Color scheme
 * [ ] Buffers tabs
 
 * [ ] File navigation
