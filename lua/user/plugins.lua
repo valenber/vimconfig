@@ -42,12 +42,23 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
+
+  -- colourscheme
   use "navarasu/onedark.nvim"
+
+  -- UI elements
   use { 'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
   use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
+  -- syntax highlighting
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use "tpope/vim-fugitive"
+
+  -- utils
+  use "tpope/vim-commentary"
   use "yuttie/comfortable-motion.vim"
+
+  -- tools
+  use "tpope/vim-fugitive"
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
   -- Automatically set up your configuration after cloning packer.nvim
