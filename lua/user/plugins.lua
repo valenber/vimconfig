@@ -56,6 +56,7 @@ return packer.startup(function(use)
   -- utils
   use "tpope/vim-commentary"
   use "yuttie/comfortable-motion.vim"
+  use "unblevable/quick-scope"
 
   -- tools
   use "tpope/vim-fugitive"
