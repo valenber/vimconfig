@@ -11,7 +11,7 @@ sudo make install
 ```
 
 ## Configuration
-Entry configuration file `init.lua` of `vim.init` should be located inside `/$HOME/.config/nvim/`
+Entry configuration file `init.lua` should be located inside `/$HOME/.config/nvim/`
 
 Add plugin manager to your system
 
@@ -26,16 +26,19 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 * [x] Keymapping
 * [x] Plugin manager
-* [ ] LSP
-	* [ ] Code completion
-	* [ ] Code actions
-	* [ ] Autoformat
+* [x] Code completion
 * [x] Status line
 * [x] Color scheme
 * [x] Buffers tabs
 * [x] Syntax highlighting
-* [ ] File navigation
 * [x] MarkdownPreview
 * [x] Git helper
+* [ ] LSP
+  * [ ] Code completion
+  * [ ] Code navigation
+  * [ ] Code actions
+  * [ ] Autoformat
+* [ ] File navigation
+
 * [ ] Custom snippets (input helpers)
 * [ ] Debugger (run individual tests)
