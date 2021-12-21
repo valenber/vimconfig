@@ -95,3 +95,5 @@ require("user.plugins")
 -- plugin configurations
 require("user.onedark")
 require("user.lualine")
+require("user.bufferline")
+require("user.treesitter")
