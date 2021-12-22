@@ -62,6 +62,10 @@ return packer.startup(function(use)
   -- tools
   use "tpope/vim-fugitive"
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- input completion
   use "hrsh7th/nvim-cmp" -- The completion plugin

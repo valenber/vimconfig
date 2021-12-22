@@ -10,6 +10,9 @@ local options = {
   cmdheight = 2,
   expandtab = true,
   tabstop = 2,
+  showtabline = 2,
+  softtabstop = 2,
+  shiftwidth = 2 ,
   cursorline = true,
   numberwidth = 4,
   hidden = true,
@@ -35,7 +38,6 @@ local options = {
   hlsearch = true,
   pumheight = 10,
   showmode = false,
-  showtabline = 2,
 }
 
 for k, v in pairs(options) do
@@ -67,7 +69,7 @@ keymap("n", "<Space>", "/", cmd_opts)
 keymap("n", "<Esc>", ":noh<CR>", cmd_opts)
 
 -- allow gf to open non-existent files
-keymap("n", "<leader>gf", ":edit <cfile><CR>", opts)
+keymap("n", "<leader>gnf", ":edit <cfile><CR>", opts)
 
 -- splits navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -102,3 +104,5 @@ require("user.treesitter")
 
 require("user.cmp")
 require("user.lsp")
+
+require("user.telescope")
