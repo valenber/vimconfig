@@ -5,7 +5,7 @@ local options = {
   number = true,
   relativenumber = true,
   backup = true,
-  backupdir = "../../.local/share/nvim/backup//",
+  backupdir = "/home/valenber/.local/share/nvim/backup//",
   clipboard = "unnamedplus",
   cmdheight = 2,
   expandtab = true,
@@ -30,11 +30,9 @@ local options = {
   redrawtime = 10000,
   autoindent = true,
   smartindent = true,
-  smartcase = true,
   swapfile = false,
   fileencoding = "utf-8",
   hlsearch = true,
-  ignorecase = true,
   pumheight = 10,
   showmode = false,
   showtabline = 2,
@@ -49,6 +47,7 @@ vim.cmd [[set iskeyword+=-]]
 --------------------------------------------------------------------------
 -- Keymaps
 --------------------------------------------------------------------------
+
 local opts = { noremap = true, silent = true }
 local cmd_opts = { noremap = true }
 local keymap = vim.api.nvim_set_keymap
@@ -65,10 +64,10 @@ keymap("i", "jk", "<Esc>", opts)
 keymap("n", "<Space>", "/", cmd_opts)
 
 -- clear search highlighting
-keymap("n", "<Esc>", ":noh<cr>", cmd_opts)
+keymap("n", "<Esc>", ":noh<CR>", cmd_opts)
 
 -- allow gf to open non-existent files
-keymap("n", "<leader>gf", ":edit <cfile><cr>", opts)
+keymap("n", "<leader>gf", ":edit <cfile><CR>", opts)
 
 -- splits navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -90,6 +89,7 @@ keymap("v", ">", ">gv", opts)
 --------------------------------------------------------------------------
 -- Imports
 --------------------------------------------------------------------------
+
 require("user.plugins")
 
 -- plugin configurations
@@ -101,3 +101,4 @@ require("user.bufferline")
 require("user.treesitter")
 
 require("user.cmp")
+require("user.lsp")

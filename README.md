@@ -21,7 +21,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-
 ## Configuration components
 
 * [x] Keymapping
@@ -33,11 +32,12 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 * [x] Syntax highlighting
 * [x] MarkdownPreview
 * [x] Git helper
-* [ ] LSP
-  * [ ] Code completion
-  * [ ] Code navigation
+* [x] LSP
+  * [x] Code completion
+  * [x] Code navigation
   * [ ] Code actions
-  * [ ] Autoformat
+
+* [ ] Autoformat
 * [ ] File navigation
 
 * [ ] Custom snippets (input helpers)
