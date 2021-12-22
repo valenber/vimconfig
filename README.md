@@ -40,7 +40,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 * [ ] Autoformat
   * [x] lua
-  * [ ] prettier, eslint
+  * [x] prettier, eslint
   * [ ] stylelint
 
 * [ ] Custom snippets (input helpers)
