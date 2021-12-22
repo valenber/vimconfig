@@ -35,10 +35,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 * [x] LSP
   * [x] Code completion
   * [x] Code navigation
-  * [ ] Code actions
+  * [x] Code actions
+* [x] File navigation
 
 * [ ] Autoformat
-* [ ] File navigation
+  * [x] lua
+  * [ ] prettier, eslint
+  * [ ] stylelint
 
 * [ ] Custom snippets (input helpers)
-* [ ] Debugger (run individual tests)
+* [ ] Debugger
