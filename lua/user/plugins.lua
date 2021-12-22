@@ -62,6 +62,7 @@ return packer.startup(
     use "MattesGroeger/vim-bookmarks"
     use {"mhartington/formatter.nvim", run = "npm i -g lua-fmt"}
     use "windwp/nvim-autopairs"
+    use "tpope/vim-surround"
 
     -- tools
     use "tpope/vim-fugitive"
