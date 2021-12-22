@@ -108,3 +108,4 @@ require("user.lsp")
 require("user.telescope")
 
 require("user.formatter")
+require("user.autopairs")

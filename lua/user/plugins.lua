@@ -61,6 +61,7 @@ return packer.startup(
     use "unblevable/quick-scope"
     use "MattesGroeger/vim-bookmarks"
     use {"mhartington/formatter.nvim", run = "npm i -g lua-fmt"}
+    use "windwp/nvim-autopairs"
 
     -- tools
     use "tpope/vim-fugitive"
