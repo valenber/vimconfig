@@ -15,5 +15,8 @@ telescope.setup{
 }
 
 keymap("n", "<C-p>", ":Telescope find_files theme=dropdown<CR>", opts)
-keymap("n", "<leader>ca", ":Telescope lsp_code_actions theme=cursor<CR>", opts)
+keymap("n", "<leader>gb", ":Telescope buffers theme=dropdown<CR>", opts)
+keymap("n", "<leader>ca", ":Telescope lsp_code_actions theme=cusor<CR>", opts)
 keymap("n", "<leader><Space>", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>gr", ":Telescope lsp_references theme=dropdown<CR>", opts)
+keymap("n", "<leader>*", ":Telescope grep_string theme=dropdown<CR>", opts)

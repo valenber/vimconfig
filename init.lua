@@ -12,7 +12,7 @@ local options = {
   tabstop = 2,
   showtabline = 2,
   softtabstop = 2,
-  shiftwidth = 2 ,
+  shiftwidth = 2,
   cursorline = true,
   numberwidth = 4,
   hidden = true,
@@ -37,7 +37,7 @@ local options = {
   fileencoding = "utf-8",
   hlsearch = true,
   pumheight = 10,
-  showmode = false,
+  showmode = false
 }
 
 for k, v in pairs(options) do
@@ -50,11 +50,11 @@ vim.cmd [[set iskeyword+=-]]
 -- Keymaps
 --------------------------------------------------------------------------
 
-local opts = { noremap = true, silent = true }
-local cmd_opts = { noremap = true }
+local opts = {noremap = true, silent = true}
+local cmd_opts = {noremap = true}
 local keymap = vim.api.nvim_set_keymap
 
-vim.g.mapleader =','
+vim.g.mapleader = ","
 
 -- Normal Mode --
 keymap("n", "<leader>vr", ":source ~/.config/nvim/init.lua<CR>", cmd_opts)
@@ -106,3 +106,5 @@ require("user.cmp")
 require("user.lsp")
 
 require("user.telescope")
+
+require("user.formatter")
