@@ -12,10 +12,16 @@ telescope.setup {
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = {"smart"}
+  },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+      find_command = {'rg', '--files', '--hidden', '-g', '!.git' }
+    }
   }
 }
 
-keymap("n", "<C-p>", ":Telescope find_files theme=dropdown<CR>", opts)
+keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>gb", ":Telescope buffers theme=dropdown<CR>", opts)
 keymap("n", "<leader>ca", ":Telescope lsp_code_actions theme=cursor<CR>", opts)
 keymap("n", "<leader><Space>", ":Telescope live_grep<CR>", opts)
