@@ -56,8 +56,8 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader =','
 
 -- Normal Mode --
-keymap("n", "<leader>vr", ":source ~/.config/nvim/init.lua<cr>", opts)
-keymap("n", "<leader>ve", ":edit ~/.config/nvim/init.lua<cr>", opts)
+keymap("n", "<leader>vr", ":source ~/.config/nvim/init.lua<CR>", cmd_opts)
+keymap("n", "<leader>ve", ":edit ~/.config/nvim/init.lua<CR>", cmd_opts)
 
 keymap("i", "jk", "<Esc>", opts)
 
@@ -94,8 +94,10 @@ require("user.plugins")
 
 -- plugin configurations
 require("user.onedark")
+require("user.quick-scope")
+
 require("user.lualine")
 require("user.bufferline")
 require("user.treesitter")
+
 require("user.cmp")
-require("user.quick-scope")
