@@ -88,6 +88,10 @@ keymap("v", "jk", "<Esc>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- test input helpers
+keymap("i", "<leader>(", "() => {}<Left><CR><Esc><S-O>", opts)
+keymap("i", "<leader>td", "test.todo('')<Left><Left>", opts)
+keymap("n", "<leader>do", "0f.d2wf)i,", opts)
 --------------------------------------------------------------------------
 -- Imports
 --------------------------------------------------------------------------
