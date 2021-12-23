@@ -16,7 +16,7 @@ telescope.setup {
   pickers = {
     find_files = {
       theme = "dropdown",
-      find_command = {'rg', '--files', '--hidden', '-g', '!.git' }
+      find_command = {"rg", "--files", "--hidden", "-g", "!.git"}
     }
   }
 }
