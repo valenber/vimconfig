@@ -27,7 +27,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 * [x] Plugin manager
 * [x] Code completion
 * [x] Status line
-  * [ ] Display number of linting errors
 * [x] Color scheme
 * [x] Buffers tabs
 * [x] Syntax highlighting
