@@ -60,7 +60,7 @@ return packer.startup(
     use "yuttie/comfortable-motion.vim"
     use "unblevable/quick-scope"
     use "MattesGroeger/vim-bookmarks"
-    use {"mhartington/formatter.nvim", run = "npm i -g lua-fmt"}
+    -- use {"mhartington/formatter.nvim", run = "npm i -g lua-fmt"}
     use "windwp/nvim-autopairs"
     use "tpope/vim-surround"
 
@@ -88,6 +88,7 @@ return packer.startup(
     -- LSP
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+    use "jose-elias-alvarez/null-ls.nvim" -- formatter and linter
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
