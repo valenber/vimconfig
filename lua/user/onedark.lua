@@ -1,7 +1,3 @@
-vim.g.onedark_transparent_background = true
-vim.g.onedark_italic_comment = true
--- vim.g.onedark_style = 'darker'
-
 local status_ok, onedark = pcall(require, "onedark")
 
 if not status_ok then
@@ -9,4 +5,12 @@ if not status_ok then
   return
 end
 
-onedark.setup()
+onedark.setup {
+  style = 'warm',
+  transparent = true,
+  code_style = {
+        comments = 'italic',
+    },
+}
+
+onedark.load()
